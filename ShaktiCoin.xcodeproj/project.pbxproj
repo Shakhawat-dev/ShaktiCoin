@@ -11,6 +11,8 @@
 		A1EF530F281D2A3E00DF9733 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EF530E281D2A3E00DF9733 /* ContentView.swift */; };
 		A1EF5311281D2A3F00DF9733 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1EF5310281D2A3F00DF9733 /* Assets.xcassets */; };
 		A1EF5314281D2A3F00DF9733 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1EF5313281D2A3F00DF9733 /* Preview Assets.xcassets */; };
+		A1EF5322281D2DC900DF9733 /* PinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EF5321281D2DC900DF9733 /* PinView.swift */; };
+		A1EF5324281D31B500DF9733 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EF5323281D31B500DF9733 /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		A1EF530E281D2A3E00DF9733 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A1EF5310281D2A3F00DF9733 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1EF5313281D2A3F00DF9733 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A1EF5321281D2DC900DF9733 /* PinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinView.swift; sourceTree = "<group>"; };
+		A1EF5323281D31B500DF9733 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,9 @@
 		A1EF530B281D2A3E00DF9733 /* ShaktiCoin */ = {
 			isa = PBXGroup;
 			children = (
+				A1EF531D281D2BF500DF9733 /* Extensions */,
+				A1EF531C281D2BE700DF9733 /* Models */,
+				A1EF531A281D2BAD00DF9733 /* Core */,
 				A1EF530C281D2A3E00DF9733 /* ShaktiCoinApp.swift */,
 				A1EF530E281D2A3E00DF9733 /* ContentView.swift */,
 				A1EF5310281D2A3F00DF9733 /* Assets.xcassets */,
@@ -65,6 +72,61 @@
 				A1EF5313281D2A3F00DF9733 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A1EF531A281D2BAD00DF9733 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A1EF531E281D2D2100DF9733 /* Pin */,
+				A1EF531B281D2BBD00DF9733 /* Components */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A1EF531B281D2BBD00DF9733 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A1EF531C281D2BE700DF9733 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A1EF531D281D2BF500DF9733 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A1EF5323281D31B500DF9733 /* Color.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A1EF531E281D2D2100DF9733 /* Pin */ = {
+			isa = PBXGroup;
+			children = (
+				A1EF5320281D2D7000DF9733 /* ViewModel */,
+				A1EF531F281D2D6100DF9733 /* View */,
+			);
+			path = Pin;
+			sourceTree = "<group>";
+		};
+		A1EF531F281D2D6100DF9733 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A1EF5321281D2DC900DF9733 /* PinView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A1EF5320281D2D7000DF9733 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +200,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1EF530F281D2A3E00DF9733 /* ContentView.swift in Sources */,
+				A1EF5324281D31B500DF9733 /* Color.swift in Sources */,
 				A1EF530D281D2A3E00DF9733 /* ShaktiCoinApp.swift in Sources */,
+				A1EF5322281D2DC900DF9733 /* PinView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
