@@ -13,6 +13,19 @@
 		A1EF5314281D2A3F00DF9733 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1EF5313281D2A3F00DF9733 /* Preview Assets.xcassets */; };
 		A1EF5322281D2DC900DF9733 /* PinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EF5321281D2DC900DF9733 /* PinView.swift */; };
 		A1EF5324281D31B500DF9733 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EF5323281D31B500DF9733 /* Color.swift */; };
+		A1EF5326281D35C100DF9733 /* BackgroundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EF5325281D35C100DF9733 /* BackgroundImageView.swift */; };
+		A1EF5334281D381200DF9733 /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1EF5330281D372300DF9733 /* Lato-Black.ttf */; };
+		A1EF5335281D381700DF9733 /* Lato-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1EF532A281D372300DF9733 /* Lato-BlackItalic.ttf */; };
+		A1EF5336281D381B00DF9733 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1EF532B281D372300DF9733 /* Lato-Bold.ttf */; };
+		A1EF5337281D381E00DF9733 /* Lato-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1EF5331281D372300DF9733 /* Lato-BoldItalic.ttf */; };
+		A1EF5338281D382100DF9733 /* Lato-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1EF532C281D372300DF9733 /* Lato-Italic.ttf */; };
+		A1EF5339281D382600DF9733 /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1EF532E281D372300DF9733 /* Lato-Light.ttf */; };
+		A1EF533A281D382A00DF9733 /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1EF532D281D372300DF9733 /* Lato-LightItalic.ttf */; };
+		A1EF533B281D382E00DF9733 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1EF5329281D372200DF9733 /* Lato-Regular.ttf */; };
+		A1EF533E281D3A8100DF9733 /* Lato-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1EF532F281D372300DF9733 /* Lato-Thin.ttf */; };
+		A1EF533F281D3A8500DF9733 /* Lato-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1EF5332281D372300DF9733 /* Lato-ThinItalic.ttf */; };
+		A1EF5346281D3CBE00DF9733 /* Text+Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EF5345281D3CBE00DF9733 /* Text+Typography.swift */; };
+		A1EF5348281D3DFE00DF9733 /* Text+Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EF5347281D3DFE00DF9733 /* Text+Styles.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +36,20 @@
 		A1EF5313281D2A3F00DF9733 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A1EF5321281D2DC900DF9733 /* PinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinView.swift; sourceTree = "<group>"; };
 		A1EF5323281D31B500DF9733 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		A1EF5325281D35C100DF9733 /* BackgroundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImageView.swift; sourceTree = "<group>"; };
+		A1EF5329281D372200DF9733 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
+		A1EF532A281D372300DF9733 /* Lato-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BlackItalic.ttf"; sourceTree = "<group>"; };
+		A1EF532B281D372300DF9733 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		A1EF532C281D372300DF9733 /* Lato-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Italic.ttf"; sourceTree = "<group>"; };
+		A1EF532D281D372300DF9733 /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-LightItalic.ttf"; sourceTree = "<group>"; };
+		A1EF532E281D372300DF9733 /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light.ttf"; sourceTree = "<group>"; };
+		A1EF532F281D372300DF9733 /* Lato-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Thin.ttf"; sourceTree = "<group>"; };
+		A1EF5330281D372300DF9733 /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
+		A1EF5331281D372300DF9733 /* Lato-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BoldItalic.ttf"; sourceTree = "<group>"; };
+		A1EF5332281D372300DF9733 /* Lato-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-ThinItalic.ttf"; sourceTree = "<group>"; };
+		A1EF5333281D375A00DF9733 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A1EF5345281D3CBE00DF9733 /* Text+Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Text+Typography.swift"; sourceTree = "<group>"; };
+		A1EF5347281D3DFE00DF9733 /* Text+Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Text+Styles.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,12 +82,14 @@
 		A1EF530B281D2A3E00DF9733 /* ShaktiCoin */ = {
 			isa = PBXGroup;
 			children = (
+				A1EF5343281D3C9400DF9733 /* Utilities */,
+				A1EF5333281D375A00DF9733 /* Info.plist */,
 				A1EF531D281D2BF500DF9733 /* Extensions */,
 				A1EF531C281D2BE700DF9733 /* Models */,
 				A1EF531A281D2BAD00DF9733 /* Core */,
 				A1EF530C281D2A3E00DF9733 /* ShaktiCoinApp.swift */,
 				A1EF530E281D2A3E00DF9733 /* ContentView.swift */,
-				A1EF5310281D2A3F00DF9733 /* Assets.xcassets */,
+				A1EF5327281D36EF00DF9733 /* Resources */,
 				A1EF5312281D2A3F00DF9733 /* Preview Content */,
 			);
 			path = ShaktiCoin;
@@ -86,6 +115,7 @@
 		A1EF531B281D2BBD00DF9733 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				A1EF5325281D35C100DF9733 /* BackgroundImageView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -127,6 +157,49 @@
 			children = (
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A1EF5327281D36EF00DF9733 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A1EF5328281D36F800DF9733 /* Fonts */,
+				A1EF5310281D2A3F00DF9733 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A1EF5328281D36F800DF9733 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A1EF5330281D372300DF9733 /* Lato-Black.ttf */,
+				A1EF532A281D372300DF9733 /* Lato-BlackItalic.ttf */,
+				A1EF532B281D372300DF9733 /* Lato-Bold.ttf */,
+				A1EF5331281D372300DF9733 /* Lato-BoldItalic.ttf */,
+				A1EF532C281D372300DF9733 /* Lato-Italic.ttf */,
+				A1EF532E281D372300DF9733 /* Lato-Light.ttf */,
+				A1EF532D281D372300DF9733 /* Lato-LightItalic.ttf */,
+				A1EF5329281D372200DF9733 /* Lato-Regular.ttf */,
+				A1EF532F281D372300DF9733 /* Lato-Thin.ttf */,
+				A1EF5332281D372300DF9733 /* Lato-ThinItalic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		A1EF5343281D3C9400DF9733 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A1EF5344281D3CA700DF9733 /* Styles */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A1EF5344281D3CA700DF9733 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				A1EF5345281D3CBE00DF9733 /* Text+Typography.swift */,
+				A1EF5347281D3DFE00DF9733 /* Text+Styles.swift */,
+			);
+			path = Styles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,8 +260,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1EF5335281D381700DF9733 /* Lato-BlackItalic.ttf in Resources */,
+				A1EF533F281D3A8500DF9733 /* Lato-ThinItalic.ttf in Resources */,
+				A1EF533E281D3A8100DF9733 /* Lato-Thin.ttf in Resources */,
+				A1EF5338281D382100DF9733 /* Lato-Italic.ttf in Resources */,
+				A1EF5336281D381B00DF9733 /* Lato-Bold.ttf in Resources */,
 				A1EF5314281D2A3F00DF9733 /* Preview Assets.xcassets in Resources */,
+				A1EF5337281D381E00DF9733 /* Lato-BoldItalic.ttf in Resources */,
+				A1EF5334281D381200DF9733 /* Lato-Black.ttf in Resources */,
 				A1EF5311281D2A3F00DF9733 /* Assets.xcassets in Resources */,
+				A1EF533B281D382E00DF9733 /* Lato-Regular.ttf in Resources */,
+				A1EF533A281D382A00DF9733 /* Lato-LightItalic.ttf in Resources */,
+				A1EF5339281D382600DF9733 /* Lato-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,10 +282,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1EF5348281D3DFE00DF9733 /* Text+Styles.swift in Sources */,
+				A1EF5326281D35C100DF9733 /* BackgroundImageView.swift in Sources */,
 				A1EF530F281D2A3E00DF9733 /* ContentView.swift in Sources */,
 				A1EF5324281D31B500DF9733 /* Color.swift in Sources */,
 				A1EF530D281D2A3E00DF9733 /* ShaktiCoinApp.swift in Sources */,
 				A1EF5322281D2DC900DF9733 /* PinView.swift in Sources */,
+				A1EF5346281D3CBE00DF9733 /* Text+Typography.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +420,7 @@
 				DEVELOPMENT_TEAM = 33Z26KH6FC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShaktiCoin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -363,6 +450,7 @@
 				DEVELOPMENT_TEAM = 33Z26KH6FC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShaktiCoin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

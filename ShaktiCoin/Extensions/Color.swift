@@ -17,4 +17,5 @@ struct ColorTheme {
     let browDark = Color("BrownDarkColor")
     let brownLight = Color("BrownLightColor")
     let brownOutline = Color("BrownOutlineColor")
+    let semiTransparentGray = Color("SemiTransparentGray")
 }
