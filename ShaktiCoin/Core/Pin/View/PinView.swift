@@ -34,12 +34,10 @@ struct PinView: View {
                 .foregroundColor(.white)
                 
                 HStack(spacing: 16.0) {
-                    Image(systemName: "circle.fill")
-                    Image(systemName: "circle.fill")
-                    Image(systemName: "circle.fill")
-                    Image(systemName: "circle.fill")
-                    Image(systemName: "circle.fill")
-                    Image(systemName: "circle.fill")
+                    
+                    ForEach( 0...5, id: \.self) { _ in
+                        Image(systemName: "circle.fill")
+                    }
                 }
                 .foregroundColor(.white)
                 
@@ -51,34 +49,55 @@ struct PinView: View {
                 
                 LazyVGrid(columns: columns, spacing: 20) {
                     ForEach(keys, id: \.self) { item in
-                        Text("\(item)")
+                        Button {
+                            // Do Something
+                        } label: {
+                            Text("\(item)")
+                                .label(.l22)
+                                .padding(24)
+                                .background(
+                                    Circle()
+                                        .fill(Color.theme.semiTransparentGray)
+                                )
+                        }
+
+                        
+                    }
+                    
+                    Button {
+                        // Do Something
+                    } label: {
+                        Image("backspace-icon")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 32, height: 32)
+                            .padding(10)
+                    }
+
+                    Button {
+                        // Do Something
+                    } label: {
+                        Text("0")
                             .label(.l22)
                             .padding(24)
                             .background(
                                 Circle()
                                     .fill(Color.theme.semiTransparentGray)
-                            )
+                                )
                     }
                     
-                    Image("backspace-icon")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 32, height: 32)
-                        .padding(10)
+                    Button {
+                        // Do Something
+                    } label: {
+                        Image("enter-icon")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 32, height: 32)
+                            .padding(10)
+                    }
                     
-                    Text("0")
-                        .label(.l22)
-                        .padding(24)
-                        .background(
-                            Circle()
-                                .fill(Color.theme.semiTransparentGray)
-                            )
                     
-                    Image("enter-icon")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 32, height: 32)
-                        .padding(10)
+                    
                     
                 }
                 .foregroundColor(.white)

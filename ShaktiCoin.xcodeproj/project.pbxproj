@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A12765482826D3DE0025D646 /* ForgotPinDialogueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12765472826D3DE0025D646 /* ForgotPinDialogueView.swift */; };
 		A1EF530D281D2A3E00DF9733 /* ShaktiCoinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EF530C281D2A3E00DF9733 /* ShaktiCoinApp.swift */; };
 		A1EF530F281D2A3E00DF9733 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EF530E281D2A3E00DF9733 /* ContentView.swift */; };
 		A1EF5311281D2A3F00DF9733 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1EF5310281D2A3F00DF9733 /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A12765472826D3DE0025D646 /* ForgotPinDialogueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPinDialogueView.swift; sourceTree = "<group>"; };
 		A1EF5309281D2A3E00DF9733 /* ShaktiCoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShaktiCoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1EF530C281D2A3E00DF9733 /* ShaktiCoinApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaktiCoinApp.swift; sourceTree = "<group>"; };
 		A1EF530E281D2A3E00DF9733 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				A1EF5321281D2DC900DF9733 /* PinView.swift */,
+				A12765472826D3DE0025D646 /* ForgotPinDialogueView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				A1EF5348281D3DFE00DF9733 /* Text+Styles.swift in Sources */,
 				A1EF5326281D35C100DF9733 /* BackgroundImageView.swift in Sources */,
 				A1EF530F281D2A3E00DF9733 /* ContentView.swift in Sources */,
+				A12765482826D3DE0025D646 /* ForgotPinDialogueView.swift in Sources */,
 				A1EF5324281D31B500DF9733 /* Color.swift in Sources */,
 				A1EF530D281D2A3E00DF9733 /* ShaktiCoinApp.swift in Sources */,
 				A1EF5322281D2DC900DF9733 /* PinView.swift in Sources */,
