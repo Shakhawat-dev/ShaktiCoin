@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		110C75612827965600739549 /* GradientButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110C75602827965600739549 /* GradientButtonView.swift */; };
+		110C756628279B0700739549 /* GetEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110C756528279B0700739549 /* GetEmailView.swift */; };
+		110C756828279C7A00739549 /* FormBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110C756728279C7A00739549 /* FormBackgroundView.swift */; };
+		110C756A2827ADA500739549 /* TitledEditTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110C75692827ADA500739549 /* TitledEditTextView.swift */; };
 		A12765482826D3DE0025D646 /* ForgotPinDialogueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12765472826D3DE0025D646 /* ForgotPinDialogueView.swift */; };
 		A1EF530D281D2A3E00DF9733 /* ShaktiCoinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EF530C281D2A3E00DF9733 /* ShaktiCoinApp.swift */; };
 		A1EF530F281D2A3E00DF9733 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EF530E281D2A3E00DF9733 /* ContentView.swift */; };
@@ -30,6 +34,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		110C75602827965600739549 /* GradientButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButtonView.swift; sourceTree = "<group>"; };
+		110C756528279B0700739549 /* GetEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetEmailView.swift; sourceTree = "<group>"; };
+		110C756728279C7A00739549 /* FormBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormBackgroundView.swift; sourceTree = "<group>"; };
+		110C75692827ADA500739549 /* TitledEditTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitledEditTextView.swift; sourceTree = "<group>"; };
 		A12765472826D3DE0025D646 /* ForgotPinDialogueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPinDialogueView.swift; sourceTree = "<group>"; };
 		A1EF5309281D2A3E00DF9733 /* ShaktiCoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShaktiCoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1EF530C281D2A3E00DF9733 /* ShaktiCoinApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaktiCoinApp.swift; sourceTree = "<group>"; };
@@ -65,6 +73,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		110C755F2827961000739549 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				110C75602827965600739549 /* GradientButtonView.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		110C756228279ACD00739549 /* Email */ = {
+			isa = PBXGroup;
+			children = (
+				110C756428279AE300739549 /* ViewModel */,
+				110C756328279ADB00739549 /* View */,
+			);
+			path = Email;
+			sourceTree = "<group>";
+		};
+		110C756328279ADB00739549 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				110C756528279B0700739549 /* GetEmailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		110C756428279AE300739549 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		A1EF5300281D2A3E00DF9733 = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +148,7 @@
 		A1EF531A281D2BAD00DF9733 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				110C756228279ACD00739549 /* Email */,
 				A1EF531E281D2D2100DF9733 /* Pin */,
 				A1EF531B281D2BBD00DF9733 /* Components */,
 			);
@@ -117,7 +158,10 @@
 		A1EF531B281D2BBD00DF9733 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				110C755F2827961000739549 /* Buttons */,
 				A1EF5325281D35C100DF9733 /* BackgroundImageView.swift */,
+				110C756728279C7A00739549 /* FormBackgroundView.swift */,
+				110C75692827ADA500739549 /* TitledEditTextView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -287,9 +331,13 @@
 			files = (
 				A1EF5348281D3DFE00DF9733 /* Text+Styles.swift in Sources */,
 				A1EF5326281D35C100DF9733 /* BackgroundImageView.swift in Sources */,
+				110C756628279B0700739549 /* GetEmailView.swift in Sources */,
+				110C756A2827ADA500739549 /* TitledEditTextView.swift in Sources */,
 				A1EF530F281D2A3E00DF9733 /* ContentView.swift in Sources */,
 				A12765482826D3DE0025D646 /* ForgotPinDialogueView.swift in Sources */,
+				110C75612827965600739549 /* GradientButtonView.swift in Sources */,
 				A1EF5324281D31B500DF9733 /* Color.swift in Sources */,
+				110C756828279C7A00739549 /* FormBackgroundView.swift in Sources */,
 				A1EF530D281D2A3E00DF9733 /* ShaktiCoinApp.swift in Sources */,
 				A1EF5322281D2DC900DF9733 /* PinView.swift in Sources */,
 				A1EF5346281D3CBE00DF9733 /* Text+Typography.swift in Sources */,

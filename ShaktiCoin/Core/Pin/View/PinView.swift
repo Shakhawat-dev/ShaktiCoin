@@ -15,96 +15,99 @@ struct PinView: View {
         ZStack {
             BackgroundImageView(imageName: "Welcome-Tour-Image")
             
-            VStack(spacing: 32.0) {
-                Image("logo-title")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 200, height: 180)
-                    .padding()
-                
-                HStack {
-                    Text("Please enter your")
-                        .label(.l4)
+            ScrollView {
+                VStack(spacing: 16) {
+                    Image("logo-title")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 200, height: 180)
+                        .padding()
                     
-                    Text("PIN")
-                        .underline()
-                        .label(.l4)
+                    HStack {
+                        Text("Please enter your")
+                            .label(.l4)
                         
-                }
-                .foregroundColor(.white)
-                
-                HStack(spacing: 16.0) {
-                    
-                    ForEach( 0...5, id: \.self) { _ in
-                        Image(systemName: "circle.fill")
+                        Text("PIN")
+                            .underline()
+                            .label(.l4)
+                            
                     }
-                }
-                .foregroundColor(.white)
-                
-                let columns = [
-                    GridItem(.adaptive(minimum: 80)),
-                    GridItem(.adaptive(minimum: 80)),
-                    GridItem(.adaptive(minimum: 80))
-                    ]
-                
-                LazyVGrid(columns: columns, spacing: 20) {
-                    ForEach(keys, id: \.self) { item in
+                    .foregroundColor(.white)
+                    
+                    HStack(spacing: 16.0) {
+                        
+                        ForEach( 0...5, id: \.self) { _ in
+                            Image(systemName: "circle.fill")
+                        }
+                    }
+                    .foregroundColor(.white)
+                    
+                    let columns = [
+                        GridItem(.adaptive(minimum: 80)),
+                        GridItem(.adaptive(minimum: 80)),
+                        GridItem(.adaptive(minimum: 80))
+                        ]
+                    
+                    LazyVGrid(columns: columns, spacing: 20) {
+                        ForEach(keys, id: \.self) { item in
+                            Button {
+                                // Do Something
+                            } label: {
+                                Text("\(item)")
+                                    .label(.l22)
+                                    .padding(24)
+                                    .background(
+                                        Circle()
+                                            .fill(Color.theme.semiTransparentGray)
+                                    )
+                            }
+
+                            
+                        }
+                        
                         Button {
                             // Do Something
                         } label: {
-                            Text("\(item)")
+                            Image("backspace-icon")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 32, height: 32)
+                                .padding(10)
+                        }
+
+                        Button {
+                            // Do Something
+                        } label: {
+                            Text("0")
                                 .label(.l22)
                                 .padding(24)
                                 .background(
                                     Circle()
                                         .fill(Color.theme.semiTransparentGray)
-                                )
+                                    )
                         }
-
+                        
+                        Button {
+                            // Do Something
+                        } label: {
+                            Image("enter-icon")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 32, height: 32)
+                                .padding(10)
+                        }
+                        
+                        
+                        
                         
                     }
+                    .foregroundColor(.white)
                     
-                    Button {
-                        // Do Something
-                    } label: {
-                        Image("backspace-icon")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 32, height: 32)
-                            .padding(10)
-                    }
-
-                    Button {
-                        // Do Something
-                    } label: {
-                        Text("0")
-                            .label(.l22)
-                            .padding(24)
-                            .background(
-                                Circle()
-                                    .fill(Color.theme.semiTransparentGray)
-                                )
-                    }
-                    
-                    Button {
-                        // Do Something
-                    } label: {
-                        Image("enter-icon")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 32, height: 32)
-                            .padding(10)
-                    }
-                    
-                    
-                    
-                    
+                    Spacer(minLength: 0)
                 }
-                .foregroundColor(.white)
-                
-                Spacer(minLength: 0)
+                .padding(.horizontal, 48)
             }
-            .padding(.horizontal, 48)
+            
         }
     }
 }
