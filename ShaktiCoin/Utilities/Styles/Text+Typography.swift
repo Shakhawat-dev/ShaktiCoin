@@ -18,7 +18,8 @@ extension Typography {
     var fontName: String { "ProximaNova-Regular" }
     
     var font: Font {
-        .custom(fontName, size: size).weight(weight)
+        .custom(fontName, size: size)
+//        .weight(weight)
     }
 
     func body(content: Content) -> some View {

@@ -25,7 +25,7 @@ struct GradientButtonView: View {
         .background(
             LinearGradient(gradient: Gradient(colors: [Color.theme.browDark, Color.theme.brownLight]), startPoint: .leading, endPoint: .trailing)
         )
-        .padding()
+//        .padding()
         
     }
 }

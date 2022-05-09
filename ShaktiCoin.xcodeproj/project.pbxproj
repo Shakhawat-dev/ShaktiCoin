@@ -11,6 +11,11 @@
 		110C756628279B0700739549 /* GetEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110C756528279B0700739549 /* GetEmailView.swift */; };
 		110C756828279C7A00739549 /* FormBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110C756728279C7A00739549 /* FormBackgroundView.swift */; };
 		110C756A2827ADA500739549 /* TitledEditTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110C75692827ADA500739549 /* TitledEditTextView.swift */; };
+		11E8595C28292619000FE3F9 /* EmailVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E8595B28292619000FE3F9 /* EmailVerificationView.swift */; };
+		11E8596028292854000FE3F9 /* NewPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E8595F28292854000FE3F9 /* NewPinView.swift */; };
+		11E8596428292B50000FE3F9 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E8596328292B50000FE3F9 /* SignInView.swift */; };
+		11E8596628293034000FE3F9 /* BrownStrokeModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E8596528293034000FE3F9 /* BrownStrokeModifier.swift */; };
+		11E8596A282932DA000FE3F9 /* PinChangeSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E85969282932DA000FE3F9 /* PinChangeSuccessView.swift */; };
 		A12765482826D3DE0025D646 /* ForgotPinDialogueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12765472826D3DE0025D646 /* ForgotPinDialogueView.swift */; };
 		A1EF530D281D2A3E00DF9733 /* ShaktiCoinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EF530C281D2A3E00DF9733 /* ShaktiCoinApp.swift */; };
 		A1EF530F281D2A3E00DF9733 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EF530E281D2A3E00DF9733 /* ContentView.swift */; };
@@ -38,6 +43,11 @@
 		110C756528279B0700739549 /* GetEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetEmailView.swift; sourceTree = "<group>"; };
 		110C756728279C7A00739549 /* FormBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormBackgroundView.swift; sourceTree = "<group>"; };
 		110C75692827ADA500739549 /* TitledEditTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitledEditTextView.swift; sourceTree = "<group>"; };
+		11E8595B28292619000FE3F9 /* EmailVerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailVerificationView.swift; sourceTree = "<group>"; };
+		11E8595F28292854000FE3F9 /* NewPinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPinView.swift; sourceTree = "<group>"; };
+		11E8596328292B50000FE3F9 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		11E8596528293034000FE3F9 /* BrownStrokeModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrownStrokeModifier.swift; sourceTree = "<group>"; };
+		11E85969282932DA000FE3F9 /* PinChangeSuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinChangeSuccessView.swift; sourceTree = "<group>"; };
 		A12765472826D3DE0025D646 /* ForgotPinDialogueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPinDialogueView.swift; sourceTree = "<group>"; };
 		A1EF5309281D2A3E00DF9733 /* ShaktiCoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShaktiCoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1EF530C281D2A3E00DF9733 /* ShaktiCoinApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaktiCoinApp.swift; sourceTree = "<group>"; };
@@ -105,6 +115,82 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		11E85958282925A5000FE3F9 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				11E859672829328E000FE3F9 /* PinChangeSuccces */,
+				11E8596128292B34000FE3F9 /* SignIn */,
+				11E8595D28292837000FE3F9 /* NewPin */,
+				11E85959282925D4000FE3F9 /* EmailVerification */,
+				110C756228279ACD00739549 /* Email */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		11E85959282925D4000FE3F9 /* EmailVerification */ = {
+			isa = PBXGroup;
+			children = (
+				11E8595A282925F3000FE3F9 /* View */,
+			);
+			path = EmailVerification;
+			sourceTree = "<group>";
+		};
+		11E8595A282925F3000FE3F9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				11E8595B28292619000FE3F9 /* EmailVerificationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		11E8595D28292837000FE3F9 /* NewPin */ = {
+			isa = PBXGroup;
+			children = (
+				11E8595E28292840000FE3F9 /* View */,
+			);
+			path = NewPin;
+			sourceTree = "<group>";
+		};
+		11E8595E28292840000FE3F9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				11E8595F28292854000FE3F9 /* NewPinView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		11E8596128292B34000FE3F9 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				11E8596228292B3A000FE3F9 /* View */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		11E8596228292B3A000FE3F9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				11E8596328292B50000FE3F9 /* SignInView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		11E859672829328E000FE3F9 /* PinChangeSuccces */ = {
+			isa = PBXGroup;
+			children = (
+				11E85968282932C2000FE3F9 /* View */,
+			);
+			path = PinChangeSuccces;
+			sourceTree = "<group>";
+		};
+		11E85968282932C2000FE3F9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				11E85969282932DA000FE3F9 /* PinChangeSuccessView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		A1EF5300281D2A3E00DF9733 = {
 			isa = PBXGroup;
 			children = (
@@ -148,7 +234,7 @@
 		A1EF531A281D2BAD00DF9733 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				110C756228279ACD00739549 /* Email */,
+				11E85958282925A5000FE3F9 /* User */,
 				A1EF531E281D2D2100DF9733 /* Pin */,
 				A1EF531B281D2BBD00DF9733 /* Components */,
 			);
@@ -162,6 +248,7 @@
 				A1EF5325281D35C100DF9733 /* BackgroundImageView.swift */,
 				110C756728279C7A00739549 /* FormBackgroundView.swift */,
 				110C75692827ADA500739549 /* TitledEditTextView.swift */,
+				11E8596528293034000FE3F9 /* BrownStrokeModifier.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -331,11 +418,16 @@
 			files = (
 				A1EF5348281D3DFE00DF9733 /* Text+Styles.swift in Sources */,
 				A1EF5326281D35C100DF9733 /* BackgroundImageView.swift in Sources */,
+				11E8595C28292619000FE3F9 /* EmailVerificationView.swift in Sources */,
+				11E8596628293034000FE3F9 /* BrownStrokeModifier.swift in Sources */,
 				110C756628279B0700739549 /* GetEmailView.swift in Sources */,
 				110C756A2827ADA500739549 /* TitledEditTextView.swift in Sources */,
 				A1EF530F281D2A3E00DF9733 /* ContentView.swift in Sources */,
 				A12765482826D3DE0025D646 /* ForgotPinDialogueView.swift in Sources */,
+				11E8596028292854000FE3F9 /* NewPinView.swift in Sources */,
+				11E8596A282932DA000FE3F9 /* PinChangeSuccessView.swift in Sources */,
 				110C75612827965600739549 /* GradientButtonView.swift in Sources */,
+				11E8596428292B50000FE3F9 /* SignInView.swift in Sources */,
 				A1EF5324281D31B500DF9733 /* Color.swift in Sources */,
 				110C756828279C7A00739549 /* FormBackgroundView.swift in Sources */,
 				A1EF530D281D2A3E00DF9733 /* ShaktiCoinApp.swift in Sources */,

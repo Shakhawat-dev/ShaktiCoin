@@ -21,7 +21,31 @@ struct FormBackgroundView<Content: View>: View {
         ZStack {
             BackgroundImageView(imageName: backgroundImage)
             
-            Text("Hello, World!")
+//            ScrollView {
+                VStack {
+                    VStack(spacing: 16.0) {
+                        Image("logo")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 96, height: 96)
+                        
+                        Text("Welcome to Shakti World")
+                            .textLight(.t22)
+                            .foregroundColor(.white)
+                        
+                        Text("The Next-Gen DeFi Network")
+                            .label(.l4)
+                            .foregroundColor(.white)
+                    }
+                    
+                    Spacer(minLength: 0)
+                    
+                    content
+                    
+                    Spacer(minLength: 0)
+                }
+                .padding(.vertical)
+//            }
         }
     }
 }

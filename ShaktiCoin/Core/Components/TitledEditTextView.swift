@@ -30,12 +30,6 @@ struct TitledEditTextView: View {
                                 .foregroundColor(Color.white)
                         } else {
                             TextField(placeHolder, text: $text, onEditingChanged: { editing in
-//                                if editing {
-//
-//                                    isEditing = editing
-//                                } else {
-//                                    isEditing = editing
-//                                }
                                 withAnimation(.easeIn) {
                                     isEditing = editing
                                 }
@@ -53,13 +47,7 @@ struct TitledEditTextView: View {
                         }
                     }
                 } else {
-                    TextField(placeHolder, text: $text, onEditingChanged: { editing in
-//                        if editing {
-//                            isEditing = editing
-//                        } else {
-//                            isEditing = editing
-//                        }
-                        
+                    TextField("", text: $text, onEditingChanged: { editing in
                         withAnimation(.easeIn) {
                             isEditing = editing
                         }
@@ -67,39 +55,23 @@ struct TitledEditTextView: View {
                 }
             }
             .padding()
-            .background(
-                Rectangle()
-                    
-                    .stroke(lineWidth: 1)
+            .background(alignment: .leading) {
+                if !isSecured {
+                    Text(placeHolder)
+                        .textLight(.t14)
+                        .padding(.horizontal, 8)
+                        .foregroundColor(Color.white)
+                        .background(
+                            isEditing ? Color.theme.accent : Color.clear
+                        )
+                        .scaleEffect(isEditing ? 0.8 : 1.0)
+                        .offset(x: 0, y: isEditing ? -28 : 0)
+                        .padding(8)
+                }
                 
-                    .fill(
-                        Color.theme.accent
-                    )
-                    
-            )
-            .overlay(alignment: .topLeading) {
-                Text(title ?? "")
-                    .font(.system(size: 16))
-                    .fontWeight(.medium)
-                    .foregroundColor(Color.theme.accent)
-                    .background(
-                        Color.white
-    
-                    )
+                
             }
-//            .modifier(OutlinedShadowModifier(isEditing: isEditing))
-            
-//            Text(title ?? "")
-//                .font(.system(size: 16))
-//                .fontWeight(.medium)
-//                .foregroundColor(Color.theme.accent)
-//                .background(
-//                    Color.white
-//
-//                )
-//                .offset(x: 16, y: isEditing ? -28 : 0)
-//                .clipped()
-//
+            .modifier(BrownStrokeModifier())
         }
         .foregroundColor(Color.white)
     }
@@ -107,11 +79,20 @@ struct TitledEditTextView: View {
 
 struct TitledEditTextView_Previews: PreviewProvider {
     static var previews: some View {
-        TitledEditTextView(title: "Password", placeHolder: "Password", text: .constant(""))
-            .previewLayout(.sizeThatFits)
-            .padding()
-            .background(
-                Color.gray
+        VStack {
+            TitledEditTextView(title: "Password", placeHolder: "Password", text: .constant(""))
+                .previewLayout(.sizeThatFits)
+                .padding()
+                .background(
+                    Color.gray
             )
+            
+            TitledEditTextView(title: "Hello", placeHolder: "3", text: .constant(""), isSecured: true)
+                .previewLayout(.sizeThatFits)
+                .padding()
+                .background(
+                    Color.gray
+            )
+        }
     }
 }
