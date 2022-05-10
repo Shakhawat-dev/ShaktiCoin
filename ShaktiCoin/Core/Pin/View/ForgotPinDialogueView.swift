@@ -58,6 +58,7 @@ struct ForgotPinDialogueView: View {
             } label: {
                 GradientButtonView(text: "Forgot Pin?")
             }
+            .padding()
 
             
 
