@@ -10,7 +10,7 @@ import SwiftUI
 struct PinChangeSuccessView: View {
     var body: some View {
         ZStack {
-            BackgroundImageView(imageName: "Welcome-Tour-Image")
+            BackgroundImageView(imageName: "LoginImage")
             
             VStack(spacing: 32.0) {
                 Image(systemName: "checkmark.circle")

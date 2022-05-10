@@ -35,23 +35,31 @@ struct EmailVerificationView: View {
                             GradientButtonView(text: "Continue")
                         }
 
-                        Text("Resend SMS Verfication code in 90s")
-                            .underline()
-                            .label(.l4)
-                            .foregroundColor(.white)
-                        
-                        Spacer(minLength: 0)
-                            
-                        Text("Let me go back and correct something")
-                            .underline()
-                            .label(.l4)
-                            .foregroundColor(.white)
+                        resendAndCorrectionSection
                     }
                     .padding(.vertical)
                     .padding(.horizontal, 16)
                 }
                 
             }
+        }
+    }
+}
+
+extension EmailVerificationView {
+    var resendAndCorrectionSection: some View {
+        VStack {
+            Text("Resend SMS Verfication code in 90s")
+                .underline()
+                .label(.l4)
+                .foregroundColor(.white)
+            
+            Spacer(minLength: 0)
+                
+            Text("Let me go back and correct something")
+                .underline()
+                .label(.l4)
+                .foregroundColor(.white)
         }
     }
 }

@@ -34,7 +34,6 @@ struct NewPinView: View {
                         
                         Text("*4 to 6 digits linked to something that you own, or a memorable experience from a unique situation or numbers associated with your loved ones.")
                             .textLight(.t11)
-                            
                             .fixedSize(horizontal: false, vertical: true)
                             .foregroundColor(.white)
                         
@@ -44,17 +43,7 @@ struct NewPinView: View {
                             GradientButtonView(text: "Continue")
                         }
 
-                        Text("Resend SMS Verfication code in 90s")
-                            .underline()
-                            .label(.l4)
-                            .foregroundColor(.white)
-                        
-                        Spacer(minLength: 0)
-                            
-                        Text("Let me go back and correct something")
-                            .underline()
-                            .label(.l4)
-                            .foregroundColor(.white)
+                        resendVerificationAndCorrectSection
                     }
 //                    .padding(.vertical)
                     .padding(.horizontal, 16)
@@ -62,6 +51,25 @@ struct NewPinView: View {
                 
             }
         }
+    }
+}
+
+extension NewPinView {
+    var resendVerificationAndCorrectSection: some View {
+        VStack {
+            Text("Resend SMS Verfication code in 90s")
+                .underline()
+                .label(.l4)
+                .foregroundColor(.white)
+            
+            Spacer(minLength: 0)
+                
+            Text("Let me go back and correct something")
+                .underline()
+                .label(.l4)
+                .foregroundColor(.white)
+        }
+        
     }
 }
 

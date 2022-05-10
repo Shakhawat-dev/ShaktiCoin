@@ -29,30 +29,7 @@ struct SignInView: View {
                         
                         TitledEditTextView(placeHolder: "Password", text: $hint, isSecured: true)
 
-                        HStack {
-                            HStack {
-                                Button {
-                                    // Do Something
-                                } label: {
-                                    Rectangle()
-                                        .frame(width: 16, height: 16)
-                                        .padding(4)
-                                        .modifier(BrownStrokeModifier())
-                                }
-                                
-                                Text("Rememeber me")
-                                    .textLight(.t14)
-                                    .foregroundColor(.white)
-
-                            }
-                            
-                            Spacer(minLength: 0)
-                            
-                            Text("Forgot password?")
-                                .underline()
-                                .textLight(.t14)
-                                .foregroundColor(.white)
-                        }
+                        rememberAndForgetSection
                         
                         Spacer(minLength: 0)
                             
@@ -62,15 +39,41 @@ struct SignInView: View {
                             GradientButtonView(text: "Sign In")
                         }
 
-                        
-                       
-                    
                     }
 //                    .padding(.vertical)
                     .padding(.horizontal, 16)
                 }
                 
             }
+        }
+    }
+}
+
+extension SignInView {
+    var rememberAndForgetSection: some View {
+        HStack {
+            HStack {
+                Button {
+                    // Do Something
+                } label: {
+                    Rectangle()
+                        .frame(width: 16, height: 16)
+                        .padding(4)
+                        .modifier(BrownStrokeModifier())
+                }
+                
+                Text("Rememeber me")
+                    .textLight(.t14)
+                    .foregroundColor(.white)
+
+            }
+            
+            Spacer(minLength: 0)
+            
+            Text("Forgot password?")
+                .underline()
+                .textLight(.t14)
+                .foregroundColor(.white)
         }
     }
 }
