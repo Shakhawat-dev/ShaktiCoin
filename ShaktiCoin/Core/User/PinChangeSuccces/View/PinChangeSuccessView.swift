@@ -13,7 +13,7 @@ struct PinChangeSuccessView: View {
             BackgroundImageView(imageName: "LoginImage")
             
             VStack(spacing: 32.0) {
-                Image(systemName: "checkmark.circle")
+                Image("tick")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 80, height: 80)
